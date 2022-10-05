@@ -10,12 +10,16 @@ drivers know that the infoTechCenter OS is Loading
 #Import libaries Here
 from time import sleep #We Imported the Sleep funcition from the time libary
 
-
-print("\n\nWelcome to Operation Fury infoTech Center")
+print('\n\033[1;30;46m Welcome to Operation Fury InfoTech Center')
 sleep(2)
-print("\n\nOperation Fury's Operating System is Booting Up")
+print("\n\033[1;30;45mOperation Fury's Operating System is Booting Up")
 
-print("\033[1;31m This text is Bright Green  \n")
+for i in range(2):
+    print("OS booting up")
+    sleep(1)
 
 
-print("\033[1;32m This text is Bright Green  \n")
+
+
+
+
