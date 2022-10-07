@@ -20,6 +20,10 @@ def weather ():
     print(weather_Condition)
     return weather_Condition
 
+weatherAlert = weather()
 
+def vehicle_Response_System():
+    if weatherAlert == "Icy":
+        print("\vRS has changer your alarm 30 minutes earlier based on the NWS forcast of ",weatherAlert)
 
-
+vehicle_Response_System()
