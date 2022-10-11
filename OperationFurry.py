@@ -10,6 +10,7 @@ Define a function to check are gas gauge and determine how far
 
 #import libery here
 import random
+from time import sleep
 
 # Gas level funtion
 def gas_Level_Gauge():
@@ -23,6 +24,8 @@ gas_Level_Indicator = gas_Level_Gauge()
 
 def gas_Level_Alert():
     if gas_Level_Indicator == "Empty":
-        print("***WARNING YOU ARE ON EMPTY***\nCalling Emergncy Contact")
+        print("***WARNING YOU ARE ON EMPTY***")
+        sleep(1.5)
+        print("Calling Emergncy Contact")
 
 gas_Level_Alert()
