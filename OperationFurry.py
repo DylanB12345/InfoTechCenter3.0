@@ -1,4 +1,12 @@
 
+#*******************************************************************************************
+#Import libaries Here
+from time import sleep #We Imported the Sleep funcition from the time libary
+
+import random
+
+#******************************************************************************************
+
 #Welcome Screen
 #Developer: Dylan Bellinger
 #Version: 1.1
@@ -8,21 +16,13 @@ Our Welcome Screen will start are our program letting
 drivers know that the infoTechCenter OS is Loading
 """
 
-#Import libaries Here
-from time import sleep #We Imported the Sleep funcition from the time libary
-
-print('\n\033[1;30;46m Welcome to Operation Fury InfoTech Center')
+print('\n\033[1;30m Welcome to Operation Fury InfoTech Center')
 sleep(2)
-print("\n\033[1;30;45mOperation Fury's Operating System is Booting Up")
+print("\n\033[1;30m Operation Fury's Operating System is Booting Up")
 
 for i in range(2):
     print("OS booting up.")
     sleep(1)
-
-
-
-
-
 
 
 #Weather
@@ -36,8 +36,8 @@ picking from a list - using if, elif & else statement
 to check the condition and print a specific print line
 """
 
-#Import libraries here
-import random
+
+
 
 #Weather Condition list using the random.choice library
 #to randomly choose a condition and storing it in its brain
