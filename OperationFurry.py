@@ -12,10 +12,17 @@ Define a function to check are gas gauge and determine how far
 import random
 
 # Gas level funtion
-def gaslevelGauge():
+def gas_Level_Gauge():
     gaslevelList = ["Empty" , "Low" , "Quarter Tank" , "Half Tank" , "Three Quarter Tank" , "Full Tank" ]
     currentGasLevel = random.choice(gaslevelList)
-    print(currentGasLevel)
     return currentGasLevel
 
-gaslevelGauge()
+# Variable calling the gas_Level_Guage function to store value once
+
+gas_Level_Indicator = gas_Level_Gauge()
+
+def gas_Level_Alert():
+    if gas_Level_Indicator == "Empty":
+        print("***WARNING YOU ARE ON EMPTY***\nCalling Emergncy Contact")
+
+gas_Level_Alert()
