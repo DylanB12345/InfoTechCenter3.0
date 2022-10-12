@@ -27,7 +27,8 @@ def list_Of_Gas_Stations():
     return gas_Station_Nearby
 
 def gas_Level_Alert():
-    miles_To_Gas_Station = round(random.uniform(1,25),1)
+    miles_To_Gas_Station_Low = round(random.uniform(1,25),1)
+    miles_To_Gas_StationQuater_Tank = round(random.uniform(26, 50), 1)
     if gas_Level_Indicator == "Empty":
         print("***WARNING YOU ARE ON EMPTY***")
         sleep(1.5)
@@ -37,7 +38,13 @@ def gas_Level_Alert():
         sleep(1.5)
         print("Your gas tank is extremely low, checking google maps for the closest gas station")
         sleep(1.5)
-        print("The closest gas station is" , list_Of_Gas_Stations(),"which is",miles_To_Gas_Station,"miles away.")
+        print("The closest gas station is" , list_Of_Gas_Stations(),"which is",miles_To_Gas_Station_Low,"miles away.")
+    elif gas_Level_Indicator == "Quarter Tank":
+        print("***WARNING***")
+        sleep(1.5)
+        print("Your gas tank is a quarter tank full, checking google maps to your nearest gas station")
+        sleep(1.5)
+        print("The closest gas station is", list_Of_Gas_Stations(), "which is", miles_To_Gas_StationQuater_Tank, "miles away.")
 
 
 gas_Level_Alert()
