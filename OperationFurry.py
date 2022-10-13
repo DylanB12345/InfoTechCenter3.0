@@ -45,7 +45,6 @@ to check the condition and print a specific print line
 def weather ():
     weather_Forcast = ["Rain", "Snow" , "Sunny" , "Windy" , "Foggy" , "Stormy" , "Icy"]
     weather_Condition = random.choice(weather_Forcast)
-    print(weather_Condition)
     return weather_Condition
 
 weatherAlert = weather()
@@ -72,7 +71,7 @@ def vehicle_Response_System():
     else:
         print("\nThe weather today is,", weatherAlert,"lets Gooo!")
         print("VRS will only allow your car to go 100MPH")
-vehicle_Response_System()
+
 #**********************************************************************************************************************
 
 #Gasoline
@@ -85,9 +84,6 @@ Define a function to check are gas gauge and determine how far
  condition
 """
 
-#import libery here
-import random
-from time import sleep
 
 # Gas level funtion
 def gas_Level_Gauge():
@@ -135,5 +131,17 @@ def gas_Level_Alert():
 
 
 
+
+
+#**************************************************************************************************************
+
+#Call Functions Here ......
+print()
 gas_Level_Alert()
+
+vehicle_Response_System()
+
+
+
+
 
